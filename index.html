@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>stock management</title>
+     
+        <link rel="stylesheet" href="stock.css">
+    </head>
+    <body>
+        <div class="shadow" id="topDiv">
+            <h1 id="topH">Stock management</h1>
+            <span id="addProductSpan">
+                <label id="addProductLabel">Add Product:</label>
+                <input id="addProductInput" type="text" onkeydown="checkEnter(event);">
+                <button onclick="addProduct();" id="addProductButton">Add</button>
+            </span>
+        </div>
+                <form class="shadow" id="comingForm">
+                    <label class="cgLabel">Coming: </label>
+                    <label>Quantity:</label> 
+                    <input id="comingQty" type="number" required> 
+                    <label>&nbsp; Price:</label> 
+                    <input id="comingPrice" type="number"> 
+                    <label> &nbsp;Product:</label>
+                    <select name="comingProduct" id="comingProduct">
+                        <option value="" disabled selected>Select an option</option>
+                    </select> 
+                    <label>&nbsp;Note:</label> 
+                    <input id="comingNote" type="text" required>&nbsp;
+                    <label for="">Date:</label> 
+                    <input id="comingDate" type="date">&nbsp; 
+                    <button type="button" onclick="coming();">Submit</button>
+                </form> 
+                <form class="shadow" id="goingForm">
+                    <label class="cgLabel">Going: </label>
+                    <label> &nbsp;Quantity:</label> 
+                    <input id="goingQty" type="number"> 
+                    <label>&nbsp; Price:</label> 
+                    <input id="goingPrice" type="number"> 
+                    <label>&nbsp;Product:</label>
+                    <select name="goingProduct" id="goingProduct">
+                        <option value="" disabled selected>Select an option</option>
+                    </select> 
+                    <label>&nbsp;Note:</label> 
+                    <input id="goingNote" type="text">&nbsp;
+                    <label for="">Date:</label>
+                    <input id="goingDate" type="date"> &nbsp;
+                    <button type="button" onclick="going();">Submit</button>
+                </form>
+             
+            <div id="stockDivHolder">
+                <div class="shadow" id="totalDiv">
+                    <h2 id="stockH">Stock</h2>
+                    <table id="stockTable">
+                        <thead>
+                            <th>Product</th>
+                            <th>Stock</th>
+                        </thead>
+                        <tbody id="stockTableBody">
+                        </tbody>
+                    </table>
+                </div>
+                <div  id="stockDiv">
+                    <select  onchange="displayProduct();" id="productSelect">
+                        <option  selected disabled value="">Select the product to view details</option>
+                    </select>
+                </div>
+            </div>
+        
+    </body>
+
+    <script src="stock.js">
+</script>
+</html>

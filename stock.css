@@ -1,0 +1,99 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0%;
+}
+form{
+    padding: 10px;
+}
+#container{
+    display: flex;
+}
+#inputDiv{
+    padding: 10px;
+}
+#stockDiv{
+    display: flex;
+    gap: 1%;
+    position: relative;
+    margin: 10px;
+}
+.itemStockDiv{
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 1px 1px 8px grey;
+    border-radius: 5px;
+}
+#totalDiv {
+    padding: 10px;
+}
+#stockTable{
+    width: 250px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+table tbody td, th {
+    padding: 12px;
+    border: 1px solid black;
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
+    white-space: normal;
+    max-width:185px ; min-width: 60px;
+}
+#stockDivHolder {
+    display: flex;
+}
+.shadow {
+    margin: 10px;
+    box-shadow: 1px 1px 5px grey;
+    border-radius: 5px;
+}
+#stockDivHolder{
+    padding: 5px;
+}
+#productSelect{
+    box-shadow: 0.5px 0.5px 5px rgb(194, 194, 194);
+    z-index: 1;
+    height: 25px;
+    margin-left: 6px;
+    margin-top: 10px;
+    border-radius: 3px;
+}
+#topDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+#addProductLabel{
+    font-size: x-large;
+}
+#addProductSpan{
+    margin-right: 10px;
+}
+#topH{
+    display: inline;
+}
+.cgLabel{
+    font-size: xx-large;
+}
+#stockH{
+    margin-top: 0px;
+}
+.productNameH2{
+    float:left;
+    margin-left: 235px;
+    margin-top: 3px;
+}
+.productStockH2{
+    display:inline;
+    margin-top: 3px;
+    float:right;
+    margin-right:20px;
+}
